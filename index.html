@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <div class="container">
+        <form class="form"  method="post" action="">
+            <fieldset>
+                <legend>Cadastro de Reserva</legend>
+                <div class="input__box">
+                    <input type="text" name="nome" required class="entrada">
+                    <label for="nome" class="label__imput">Nome:</label>
+                </div>
+                <br>
+                <div class="input__box">
+                    <input type="text" name="email" required class="entrada">
+                    <label for="email" class="label__imput">Email:</label>
+                </div>
+                <br>
+                
+                <p>Sexo:</p>
+                <div class="container__form__genero">
+                    <div class="container__form__genero__opcao">
+                        <input type="radio" id="feminino" name="genero" value="feminino" class="label_genero" required>
+                        <label for="feminino">Feminino</label>
+                    </div>
+                    
+                    <div class="container__form__genero__opcao">
+                        <input type="radio" id="masculino" name="genero" value="masculino" class="label_genero" required>
+                        <label for="masculino">Masculino</label>
+                    </div>
+                    
+                    <div class="container__form__genero__opcao">
+                        <input type="radio" id="outros" name="genero" value="outros" class="label_genero" required>
+                        <label for="outros" >Outros</label>
+                    </div>
+                    
+                </div>
+                <div class="box__data__chegada">
+                    <label for="data">Data da chegada:</label>
+                    <input type="date" name="data" id="data__de__chegada">
+                </div>
+                <div class="container__form">   
+                                        
+                    
+                    <div class="box__controle">
+                        <label for="">Numero de noites</label>
+                        <div>
+                            <buttom data-controle="-"data-valor="valorPorNoite" class="butao__controle__menos">-</buttom>
+                            <input type="text" value="0" class="input__valor" data-contador>
+                            <buttom data-controle="+" data-valor="valorPorNoite" class="butao__controle__mais">+</buttom>    
+                        </div>
+                        
+                    </div>
+        
+                    
+                    <div class="box__controle">
+                        <label for="">Numero de Pessoas</label>
+                        <div>
+                            <buttom data-controle="-" data-valor="valorPorPessoa" class="butao__controle__menos">-</buttom>
+                            <input type="text" value="0" class="input__valor" data-contador>
+                            <buttom data-controle="+" data-valor="valorPorPessoa" class="butao__controle__mais" >+</buttom>
+                        </div>
+                        
+                    </div>
+                
+                </div>
+                <div class="container__form2">
+                    <label for="area__texto">Observação:</label>
+                    <textarea class="texto__area" name="area__texto" id="" cols="50" rows="10"></textarea>
+                    <button type="submit" class="botao">enviar</button>
+                </div>
+            </fieldset>
+                
+            
+        </form>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
