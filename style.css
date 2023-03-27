@@ -16,6 +16,7 @@ legend{
     padding: 10px;
     background-color: dodgerblue;
     border-radius: 7px;
+    text-align: center;
     
 }
 .form{
@@ -27,9 +28,7 @@ legend{
     border-radius: 15px;
 
 }
-legend{
-    text-align: center;
-}
+
 
 .container__form{
     margin: 25px 0 25px 0;
