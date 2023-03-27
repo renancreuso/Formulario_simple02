@@ -24,23 +24,30 @@
                 <br>
                 
                 <p>Sexo:</p>
-                <div class="container__form__genero">
-                    <div class="container__form__genero__opcao">
-                        <input type="radio" id="feminino" name="genero" value="feminino" class="label_genero" required>
-                        <label for="feminino">Feminino</label>
+                <div class="container__genero__notificacao">
+                    <div class="container__form__genero">
+                        <div class="container__form__genero__opcao">
+                            <input type="radio" id="feminino" name="genero" value="feminino" class="input__genero" required>
+                            <label for="feminino">Feminino</label>
+                        </div>
+                        
+                        <div class="container__form__genero__opcao">
+                            <input type="radio" id="masculino" name="genero" value="masculino" class="input__genero" required>
+                            <label for="masculino">Masculino</label>
+                        </div>
+                        
+                        <div class="container__form__genero__opcao">
+                            <input type="radio" id="outros" name="genero" value="outros" class="input__genero" required>
+                            <label for="outros" >Outros</label>
+                        </div>
+                        
                     </div>
-                    
-                    <div class="container__form__genero__opcao">
-                        <input type="radio" id="masculino" name="genero" value="masculino" class="label_genero" required>
-                        <label for="masculino">Masculino</label>
+                    <div class="box__notificacao">
+                        <label  for="noti"class="notificacao">Deseja receber notificações?</label>
+                        <input  name="noti"type="checkbox">
                     </div>
-                    
-                    <div class="container__form__genero__opcao">
-                        <input type="radio" id="outros" name="genero" value="outros" class="label_genero" required>
-                        <label for="outros" >Outros</label>
-                    </div>
-                    
                 </div>
+                
                 <div class="box__data__chegada">
                     <label for="data">Data da chegada:</label>
                     <input type="date" name="data" id="data__de__chegada">

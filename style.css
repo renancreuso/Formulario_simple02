@@ -62,15 +62,39 @@ legend{
     text-align: center;
 }
 
-
-
+.container__genero__notificacao{
+    display: flex;
+    align-items: center;
+    
+    
+    
+}
 .container__form__genero{
     display: flex;
+    
+    
 }
 .container__form__genero__opcao{
-    padding: 10px 10px 50px 10px;
+    display: flex;
+    
+    align-items: center;
+    padding: 10px 5px 50px 5px;
 }
 
+.input__genero{
+    margin-right: 5px;
+}
+.box__notificacao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: 50px;
+    font-size: 0.6rem;
+    border: 1px solid dodgerblue;
+    border-radius: 10px;
+    padding: 5px 2px;
+}
 .container__form2{
     display: flex;
     flex-direction: column  ;
