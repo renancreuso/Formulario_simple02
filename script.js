@@ -28,16 +28,16 @@ function manipulaDados(operacao, controle){
 function calculaValorEstimado(propriedade,operacao){
 
     
-    const valorEstimadoPornoite=document.querySelector("[data-totalPornoite]");
+    const valorEstimado=document.querySelector("[data-totalPornoite]");
 
     if(operacao == "-" && propriedade =="valorPorNoite"){
-        valorEstimadoPornoite.innerHTML= parseInt(valorEstimadoPornoite.innerHTML)-reserva[propriedade];
+        valorEstimado.innerHTML= parseInt(valorEstimado.innerHTML)-reserva[propriedade];
     }else if(operacao == "+" && propriedade =="valorPorNoite"){
-        valorEstimadoPornoite.innerHTML= parseInt(valorEstimadoPornoite.innerHTML)+reserva[propriedade];
+        valorEstimado.innerHTML= parseInt(valorEstimado.innerHTML)+reserva[propriedade];
     }else if(operacao == "-" && propriedade =="valorPorPessoa"){
-        valorEstimadoPornoite.innerHTML = parseInt(valorEstimadoPornoite.innerHTML)-reserva[propriedade];
+        valorEstimado.innerHTML = parseInt(valorEstimado.innerHTML)-reserva[propriedade];
     }else{
-        valorEstimadoPornoite.innerHTML= parseInt(valorEstimadoPornoite.innerHTML)+reserva[propriedade];
+        valorEstimado.innerHTML= parseInt(valorEstimado.innerHTML)+reserva[propriedade];
     }
    
 
