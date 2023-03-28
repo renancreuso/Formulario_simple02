@@ -7,10 +7,10 @@ const reserva ={
 
 botao.forEach((elemento)=>{
     elemento.addEventListener('click',(evento)=>{
+        
         manipulaDados(evento.target.dataset.controle,evento.target.parentNode);
         
-        valorPorNoite(evento.target.dataset.valor,evento.target.dataset.controle);
-        valorPorPessoa(evento.target.dataset.valor,evento.target.dataset.controle);       
+        calculaValorEstimado(evento.target.dataset.valor,evento.target.dataset.controle);       
        
     });
 })
@@ -25,7 +25,7 @@ function manipulaDados(operacao, controle){
     }
 }
 
-function valorPorNoite(propriedade,operacao){
+function calculaValorEstimado(propriedade,operacao){
 
     
     const valorEstimadoPornoite=document.querySelector("[data-totalPornoite]");
