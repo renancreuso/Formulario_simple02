@@ -19,9 +19,15 @@ botao.forEach((elemento)=>{
 function manipulaDados(operacao, controle){
     const resultado = controle.querySelector("[data-contador]");
     if(operacao == "-"){
-        resultado.value=parseInt(resultado.value)- 1;
+        if(resultado.value>0){
+            resultado.value=parseInt(resultado.value)- 1;
+        }
+        
     }else{
-        resultado.value=parseInt(resultado.value)+ 1;
+        if(resultado.value>=0){
+            resultado.value=parseInt(resultado.value)+ 1;    
+        }
+        
     }
 }
 
@@ -31,13 +37,25 @@ function calculaValorEstimado(propriedade,operacao){
     const valorEstimado=document.querySelector("[data-totalPornoite]");
 
     if(operacao == "-" && propriedade =="valorPorNoite"){
-        valorEstimado.innerHTML= parseInt(valorEstimado.innerHTML)-reserva[propriedade];
+        if(valorEstimado.textContent>0){
+            valorEstimado.innerHTML= parseInt(valorEstimado.innerHTML)-reserva[propriedade];
+        }
+        
     }else if(operacao == "+" && propriedade =="valorPorNoite"){
-        valorEstimado.innerHTML= parseInt(valorEstimado.innerHTML)+reserva[propriedade];
+        if(valorEstimado.textContent>=0){
+            valorEstimado.innerHTML= parseInt(valorEstimado.innerHTML)+reserva[propriedade];
+        }
+        
     }else if(operacao == "-" && propriedade =="valorPorPessoa"){
-        valorEstimado.innerHTML = parseInt(valorEstimado.innerHTML)-reserva[propriedade];
+        if(valorEstimado.textContent>0){
+            valorEstimado.innerHTML = parseInt(valorEstimado.innerHTML)-reserva[propriedade];    
+        }
+        
     }else{
-        valorEstimado.innerHTML= parseInt(valorEstimado.innerHTML)+reserva[propriedade];
+        if(valorEstimado.textContent>=0){
+            valorEstimado.innerHTML= parseInt(valorEstimado.innerHTML)+reserva[propriedade];
+        }
+        
     }
    
 
