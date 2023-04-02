@@ -37,24 +37,21 @@ function calculaValorEstimado(propriedade,operacao){
     const valorEstimado=document.querySelector("[data-totalPornoite]");
 
     if(operacao == "-" && propriedade =="valorPorNoite"){
-        if(valorEstimado.textContent>0){
-            valorEstimado.innerHTML= parseInt(valorEstimado.innerHTML)-reserva[propriedade];
-        }
+        if(valorEstimado.textContent<=0) return;
+        valorEstimado.innerHTML= parseInt(valorEstimado.innerHTML)-reserva[propriedade];
         
     }else if(operacao == "+" && propriedade =="valorPorNoite"){
-        if(valorEstimado.textContent>=0){
-            valorEstimado.innerHTML= parseInt(valorEstimado.innerHTML)+reserva[propriedade];
-        }
+        if(valorEstimado.textContent<0) return;
+        valorEstimado.innerHTML= parseInt(valorEstimado.innerHTML)+reserva[propriedade];
         
     }else if(operacao == "-" && propriedade =="valorPorPessoa"){
-        if(valorEstimado.textContent>0){
-            valorEstimado.innerHTML = parseInt(valorEstimado.innerHTML)-reserva[propriedade];    
-        }
-        
+        if(valorEstimado.textContent<=0) return;
+        valorEstimado.innerHTML = parseInt(valorEstimado.innerHTML)-reserva[propriedade];    
+                
     }else{
-        if(valorEstimado.textContent>=0){
-            valorEstimado.innerHTML= parseInt(valorEstimado.innerHTML)+reserva[propriedade];
-        }
+        if(valorEstimado.textContent<0) return;
+        valorEstimado.innerHTML= parseInt(valorEstimado.innerHTML)+reserva[propriedade];
+        
         
     }
    
