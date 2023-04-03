@@ -8,8 +8,7 @@ body{
 }
 
 legend{
-    float: none;
-    width: 0;
+    
     border: 1px solid dodgerblue;
     padding: 10px;
     background-color: dodgerblue;
