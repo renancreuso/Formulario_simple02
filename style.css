@@ -6,11 +6,7 @@ body{
     background-image: linear-gradient(to right,rgb(20,147,220),rgb(17,54,71));
     color: white;
 }
-fieldset{
-    border: 1px solid dodgerblue;
-    border-radius: 15px;
-    
-}
+
 legend{
     border: 1px solid dodgerblue;
     padding: 10px;
