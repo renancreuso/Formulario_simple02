@@ -7,14 +7,10 @@ body{
     color: white;
 }
 
-legend{
-    
+.borda{
     border: 1px solid dodgerblue;
-    padding: 10px;
-    background-color: dodgerblue;
-    border-radius: 7px;
-    text-align: center;
-    
+    border-radius: 15px;
+    padding: 20px;
 }
 .form{
     height: 50%;
